@@ -7,6 +7,7 @@ import Error from "./routes/Error"
 import Filtro from "./routes/Filtro"
 import Home from "./routes/Home"
 import Jogador from "./routes/Jogador"
+import Produtos from "./routes/Produtos"
 import Login from "./routes/Login"
 import GlobalStyle from './styles/GlobalStyles'
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/filtro" element={<Filtro />} />
         <Route path="/jogador" element={<Jogador />} />
+        <Route path="/produtos" element={<Produtos />} />
       </Routes>
       <Aside/>
       </div>

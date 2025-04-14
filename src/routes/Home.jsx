@@ -1,10 +1,11 @@
 import React from 'react'
 import Produtos from "./Produtos"
+import { Main } from '../styles/HomeStyled'
 
 const Home = ({Dados}) => {
   return (
-    <div>
-      {Dados.map((produto) =>{
+    <Main>
+      {Dados.map((produto) =>(
         <Produtos
           key={produto.id}
           imagem={produto.imagem}
@@ -12,8 +13,8 @@ const Home = ({Dados}) => {
           descricao={produto.descricao}
           preco={produto.preco}
         />
-      })}
-    </div>
+      ))}
+    </Main>
   )
 }
 

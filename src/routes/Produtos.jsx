@@ -1,16 +1,19 @@
-import React from 'react'
-
-// props - vai pegar dados de cada propriedade de outro local
-const Produtos = () => {
+import { ProdutoContainer } from '../styles/ProdutosStyled'
+ 
+const Produtos = ({imagem,titulo,descricao,preco}) => {
   return (
-    <article>
-      <img src={imagem} alt={titulo}/>
-      <h3>{titulo}</h3>
-      <p>{descricao}</p>
-      <p className='preço'>{preço}</p>
-      <button>Comprar</button>
-    </article>
+    <ProdutoContainer>
+      <article className="produto">  
+        <img src={imagem} alt={titulo}/>
+        <h3>{titulo}</h3>
+        <p>{descricao}</p>
+        <p className="preco">{preco}</p>
+        <button class="btn">Comprar</button>
+      </article>
+ 
+    </ProdutoContainer>
+   
   )
 }
-
+ 
 export default Produtos
